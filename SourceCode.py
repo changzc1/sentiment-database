@@ -42,10 +42,10 @@ j = 1
 
 incut=["AAPL","LMPX","KMX","LMPX"]
 stoname=["Apple Inc","LMP Automotive","KMX","LMPX"]
-#查找页面上是否存在相关的元素
+ 
 wnl = WordNetLemmatizer()
 file = 'Fin_word_v1.0.json'
-# 上面路径是我的json文件所在地，后面包含中文编码
+ 
 with open(file, 'r', encoding='utf-8') as f:
     pop_data = json.load(f)
     for line in pop_data:
@@ -75,7 +75,7 @@ class ElementExist(object):
 import re
 count = 0
 text=''
-#日期格式化函数
+ 
 def divide(DATA):
 
     x = DATA[DATA.index(',') + 1:].lstrip()
